@@ -20,7 +20,7 @@
 
 <body>
     <div class="container">
-        <form class="col-md-6 m-auto py-5">
+        <div class="col-md-6 m-auto py-5">
             <div class="input-group mb-3">
                 <input id="get-location" type="text" class="form-control"
                     placeholder="Enter a location for Weather ...">
@@ -28,12 +28,16 @@
                     <button onclick="loadTemperature()" type="button" class="btn btn-danger">Search</button>
                 </div>
             </div>
-        </form>
+        </div>
+
+        <!-- Default Dhaka -->
+        <div id="default-Dhaka" class="weather-status text-white text-center">
+
+        </div>
+        <div id="weather-default">
+        </div>
+
         <div id="weather-id" class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
-            <h1>Dhaka</h1>
-            <h3><span>38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
         </div>
     </div>
 
